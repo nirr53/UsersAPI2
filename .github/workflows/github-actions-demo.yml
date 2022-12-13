@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt -U --upgrade-strategy=eager
+          pip install -r UsersAPI/requirements.txt -U --upgrade-strategy=eager
       - name: Test with pytest
         run: |
           pytest tests/test_main.py
