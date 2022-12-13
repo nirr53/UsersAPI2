@@ -5,7 +5,9 @@ from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
 
 
-from UsersAPI.endpoints.exceptions import add_exceptions_handlers, api
+from UsersAPI.endpoints.exceptions import add_exceptions_handlers
+from UsersAPI.endpoints.api import router
+
 
 app = FastAPI()
 
@@ -27,7 +29,7 @@ def custom_openapi():
 
 
 app.openapi = custom_openapi
-app.include_router(api.router)
+app.include_router(router)
 add_exceptions_handlers(app)
 
 
