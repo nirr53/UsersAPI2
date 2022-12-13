@@ -5,8 +5,7 @@ from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
 
 
-from endpoints.exceptions import add_exceptions_handlers
-from endpoints import api
+from UsersAPI.endpoints.exceptions import add_exceptions_handlers, api
 
 app = FastAPI()
 
