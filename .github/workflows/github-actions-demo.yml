@@ -22,4 +22,4 @@ jobs:
           pip install -r UsersAPI/requirements.txt -U --upgrade-strategy=eager
       - name: Test with pytest
         run: |
-          pytest tests/test_main.py
+          pytest UsersAPI/tests/test_main.py
