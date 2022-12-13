@@ -2,7 +2,7 @@ import pytest
 
 from fastapi.testclient import TestClient
 
-from main import app
+from UsersAPI.main import app
 
 
 @pytest.fixture(scope='session')
